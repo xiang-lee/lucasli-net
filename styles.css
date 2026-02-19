@@ -1,0 +1,135 @@
+:root {
+  --bg-start: #f4fbff;
+  --bg-end: #d8eef5;
+  --text-main: #16324f;
+  --text-subtle: #46617b;
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(22, 50, 79, 0.14);
+  --accent: #ff9f1c;
+  --shadow: 0 14px 40px rgba(22, 50, 79, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-main);
+  background: linear-gradient(150deg, var(--bg-start), var(--bg-end));
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.bg-shape--one {
+  width: 220px;
+  height: 220px;
+  top: -50px;
+  right: -40px;
+  background: rgba(255, 159, 28, 0.22);
+}
+
+.bg-shape--two {
+  width: 280px;
+  height: 280px;
+  bottom: -80px;
+  left: -50px;
+  background: rgba(38, 189, 245, 0.2);
+}
+
+.container {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: 64px 0 72px;
+}
+
+.hero h1 {
+  margin: 10px 0 16px;
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 159, 28, 0.2);
+  color: #8b5200;
+  font-weight: 700;
+}
+
+.intro {
+  max-width: 620px;
+  margin: 0;
+  color: var(--text-subtle);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.card-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-subtle);
+  line-height: 1.6;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 560ms ease, transform 560ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 120ms;
+}
+
+.reveal-delay-2 {
+  transition-delay: 220ms;
+}
+
+.reveal-delay-3 {
+  transition-delay: 320ms;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-top: 44px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
