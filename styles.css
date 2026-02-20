@@ -77,12 +77,12 @@ body {
 .container {
   width: min(1000px, 90vw);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 /* Navigation */
 .site-header {
-  padding: 20px 0;
+  padding: 14px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -95,6 +95,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 0;
 }
 
@@ -114,6 +116,29 @@ body {
   padding: 0;
 }
 
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(9, 132, 227, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-toggle__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text-main);
+  border-radius: 999px;
+}
+
+.nav-toggle__line + .nav-toggle__line {
+  margin-top: 6px;
+}
+
 .nav-links a {
   text-decoration: none;
   color: var(--text-main);
@@ -127,7 +152,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 80px 0 60px;
+  padding: 72px 0 52px;
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
@@ -174,7 +199,7 @@ body {
 .intro {
   margin: 0 0 32px;
   color: var(--text-subtle);
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 500px;
 }
 
@@ -196,10 +221,10 @@ body {
 }
 
 .avatar-placeholder {
-  font-size: 8rem;
+  font-size: clamp(4.5rem, 15vw, 8rem);
   background: white;
-  width: 200px;
-  height: 200px;
+  width: clamp(150px, 40vw, 220px);
+  height: clamp(150px, 40vw, 220px);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -244,7 +269,7 @@ section {
 /* Hobby Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
 }
 
@@ -284,9 +309,8 @@ section {
 
 /* Game Section */
 .game-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
@@ -294,7 +318,8 @@ section {
   background: white;
   border-radius: 16px;
   padding: 20px;
-  width: 200px;
+  width: 100%;
+  min-height: 200px;
   text-decoration: none;
   color: var(--text-main);
   box-shadow: var(--shadow);
@@ -308,6 +333,15 @@ section {
 .game-card:hover {
   transform: scale(1.05);
   border-color: var(--accent);
+}
+
+.game-card.coming-soon {
+  cursor: not-allowed;
+}
+
+.game-card.coming-soon:hover {
+  transform: none;
+  border-color: transparent;
 }
 
 .game-icon {
@@ -346,7 +380,7 @@ section {
   background: rgba(255, 255, 255, 0.6);
   border: 2px dashed #b2bec3;
   border-radius: 20px;
-  padding: 60px;
+  padding: 48px 24px;
   text-align: center;
   color: var(--text-subtle);
 }
@@ -388,10 +422,57 @@ section {
 .reveal-delay-4 { transition-delay: 0.4s; }
 
 @media (max-width: 600px) {
-  .nav-links {
-    display: none; /* Mobile menu can be added later */
-  }
   .bg-shape {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height 0.3s ease, opacity 0.2s ease, transform 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-links.is-open {
+    max-height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .intro {
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .card {
+    padding: 26px 20px;
+  }
+
+  .game-card {
+    min-height: 180px;
   }
 }

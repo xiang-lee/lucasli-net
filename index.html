@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Li - 8-Year-Old Maker</title>
     <meta name="description" content="Lucas Li's Personal Website - Rubik's Cube, Soccer, Coding and more!" />
+    <meta name="theme-color" content="#fdfbf7" />
+    <link rel="canonical" href="https://lucasli.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lucas Li - 8-Year-Old Maker" />
+    <meta property="og:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
+    <meta property="og:url" content="https://lucasli.net/" />
+    <meta property="og:image" content="https://lucasli.net/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucas Li - 8-Year-Old Maker" />
+    <meta name="twitter:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
+    <meta name="twitter:image" content="https://lucasli.net/og-cover.svg" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%91%A6%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -23,10 +34,16 @@
     <header class="site-header">
       <nav class="container nav-container">
         <a href="#" class="logo">Lucas.Li</a>
-        <ul class="nav-links">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <ul id="primary-navigation" class="nav-links">
           <li><a href="#about">About Me</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#games">My Games</a></li>
+          <li><a href="#gallery">Moments</a></li>
         </ul>
       </nav>
     </header>
@@ -38,9 +55,9 @@
           <h1>I'm Lucas Li</h1>
           <p class="intro">
             I'm 8 years old! I love exploring this amazing world.<br>
-            Whether it's solving a <b>Rubik's Cube</b>, playing <b>soccer</b> on the field, 
-            or playing melodies on the <b>piano</b>, I enjoy every moment.
-            Recently, I've also been learning to create cool <b>mini-games</b> using AI!
+            Whether it's solving a <strong>Rubik's Cube</strong>, playing <strong>soccer</strong> on the field,
+            or playing melodies on the <strong>piano</strong>, I enjoy every moment.
+            Recently, I've also been learning to create cool <strong>mini-games</strong> using AI!
           </p>
           <a href="#games" class="btn-primary">Play My Games 🎮</a>
         </div>
@@ -80,7 +97,7 @@
         <p class="section-subtitle">These are the mini-games I made with AI. Give them a try! (Under development...)</p>
         
         <div class="game-grid">
-          <a href="http://game1.lucasli.net" target="_blank" class="game-card game-1">
+          <a href="#" class="game-card game-1 coming-soon" aria-disabled="true">
             <div class="game-icon">🚀</div>
             <div class="game-info">
               <h3>Space Adventure</h3>
@@ -88,8 +105,8 @@
               <span class="status-badge">Coming Soon</span>
             </div>
           </a>
-          
-          <a href="http://game2.lucasli.net" target="_blank" class="game-card game-2">
+
+          <a href="#" class="game-card game-2 coming-soon" aria-disabled="true">
             <div class="game-icon">🐉</div>
             <div class="game-info">
               <h3>Dragon Quest</h3>
@@ -98,7 +115,7 @@
             </div>
           </a>
 
-          <a href="http://game3.lucasli.net" target="_blank" class="game-card game-3">
+          <a href="#" class="game-card game-3 coming-soon" aria-disabled="true">
             <div class="game-icon">🏎️</div>
             <div class="game-info">
               <h3>Super Racing</h3>
