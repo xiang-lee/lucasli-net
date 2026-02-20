@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Li - 8-Year-Old Maker</title>
     <meta name="description" content="Lucas Li's Personal Website - Rubik's Cube, Soccer, Coding and more!" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Lucas Li" />
     <meta name="theme-color" content="#fdfbf7" />
     <link rel="canonical" href="https://lucasli.net/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Lucas Li - 8-Year-Old Maker" />
     <meta property="og:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
     <meta property="og:url" content="https://lucasli.net/" />
@@ -17,13 +20,26 @@
     <meta name="twitter:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
     <meta name="twitter:image" content="https://lucasli.net/og-cover.svg" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%91%A6%3C/text%3E%3C/svg%3E" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="./styles.css" as="style" />
     <link
       href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lucas Li",
+        "url": "https://lucasli.net/",
+        "description": "Lucas Li's personal website about Rubik's Cube, soccer, piano, and coding.",
+        "knowsAbout": ["Rubik's Cube", "Soccer", "Piano", "Coding", "Fencing"]
+      }
+    </script>
   </head>
   <body>
     <!-- Dynamic Background Shapes -->
@@ -149,6 +165,6 @@
       <p>&copy; 2026 Lucas Li. Built with ❤️ and AI.</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
