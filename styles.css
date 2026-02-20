@@ -305,6 +305,7 @@ section {
 .hobby-sport .icon { text-shadow: 2px 2px 0px rgba(78, 205, 196, 0.2); }
 .hobby-music .icon { text-shadow: 2px 2px 0px rgba(255, 159, 243, 0.2); }
 .hobby-tech .icon { text-shadow: 2px 2px 0px rgba(84, 160, 255, 0.2); }
+.hobby-fencing .icon { text-shadow: 2px 2px 0px rgba(253, 203, 110, 0.25); }
 
 
 /* Game Section */
@@ -420,6 +421,7 @@ section {
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
 
 @media (max-width: 600px) {
   .bg-shape {
