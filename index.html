@@ -24,12 +24,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="preload" href="./styles.css?v=20260424b" as="style" />
     <link
       href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260424b" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -57,7 +57,7 @@
         </button>
         <ul id="primary-navigation" class="nav-links">
           <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">PingYin</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#videos">Videos</a></li>
           <li><a href="#games">Arcade</a></li>
@@ -97,42 +97,39 @@
       </section>
 
       <section id="projects" class="section-projects reveal">
-        <div class="project-heading">
-          <p class="eyebrow">Featured Project</p>
-          <h2>PingYin 拼音冒险</h2>
-          <p>
-            PingYin is Lucas's Chinese pinyin practice game: listen, read, speak, and collect stars through short adventure levels.
-          </p>
-        </div>
-        <a class="project-spotlight" href="https://pingyin.lucasli.net/" target="_blank" rel="noopener noreferrer" aria-label="Play PingYin Chinese pinyin adventure">
-          <div class="project-visual" aria-hidden="true">
-            <div class="pinyin-card">
-              <div class="pinyin-card__fox">🦊</div>
-              <div class="pinyin-card__word">
-                <span class="pinyin-card__pinyin">pīn yīn</span>
-                <span class="pinyin-card__hanzi">拼音</span>
-              </div>
-              <div class="pinyin-card__actions">
-                <span>👂 Listen</span>
-                <span>🎤 Speak</span>
-                <span>⭐ Win</span>
-              </div>
+        <h2 class="section-title">My Projects 🚀</h2>
+        <p class="section-subtitle">Things I build with code, AI, and curiosity. More projects will join this shelf soon.</p>
+        <div class="project-grid card-grid">
+          <a class="card project-card project-card--pingyin" href="https://pingyin.lucasli.net/" target="_blank" rel="noopener noreferrer" aria-label="Play PingYin Chinese pinyin adventure">
+            <div class="project-card__top">
+              <span class="project-icon">🦊</span>
+              <span class="status-badge live">Live</span>
             </div>
-          </div>
-          <div class="project-info">
-            <span class="project-kicker">Live at pingyin.lucasli.net</span>
-            <h3>A tiny adventure for learning Chinese sounds</h3>
-            <p>
-              Built for Lucas, useful for any young learner. Each round keeps the loop simple: hear the word, read the pinyin, say it out loud, and move to the next level.
-            </p>
-            <ul class="project-feature-list" aria-label="PingYin features">
-              <li>Voice and audio practice</li>
-              <li>Kid-friendly levels</li>
-              <li>Local star progress</li>
-            </ul>
-            <span class="project-cta">Play the adventure →</span>
-          </div>
-        </a>
+            <h3>PingYin 拼音冒险</h3>
+            <p>Chinese pinyin adventure for kids: listen, read, speak, and collect stars through short levels.</p>
+            <div class="project-tags" aria-label="PingYin features">
+              <span>👂 Audio</span>
+              <span>🎤 Voice</span>
+              <span>⭐ Progress</span>
+            </div>
+            <span class="project-link">Play PingYin →</span>
+          </a>
+
+          <article class="card project-card project-card--soon" aria-label="More projects coming soon">
+            <div class="project-card__top">
+              <span class="project-icon">🧪</span>
+              <span class="status-badge">Next</span>
+            </div>
+            <h3>More Experiments</h3>
+            <p>New mini-games and learning tools will appear here as Lucas keeps building.</p>
+            <div class="project-tags" aria-label="Future project topics">
+              <span>Games</span>
+              <span>Learning</span>
+              <span>AI</span>
+            </div>
+            <span class="project-link project-link--muted">Coming soon</span>
+          </article>
+        </div>
       </section>
 
       <section id="hobbies" class="section-hobbies">
@@ -305,6 +302,6 @@
       <p>&copy; 2026 Lucas Li. Built with ❤️ and AI.</p>
     </footer>
 
-    <script src="./script.js" defer></script>
+    <script src="./script.js?v=20260424b" defer></script>
   </body>
 </html>
