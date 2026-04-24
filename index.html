@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas Li - 8-Year-Old Maker</title>
-    <meta name="description" content="Lucas Li's Personal Website - Rubik's Cube, Soccer, Coding and more!" />
+    <title>Lucas Li - Maker & PingYin Creator</title>
+    <meta name="description" content="Lucas Li's personal website for Rubik's Cube, soccer, piano, videos, and PingYin, a Chinese pinyin adventure game for kids." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="author" content="Lucas Li" />
     <meta name="theme-color" content="#fdfbf7" />
     <link rel="canonical" href="https://lucasli.net/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Lucas Li - 8-Year-Old Maker" />
-    <meta property="og:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
+    <meta property="og:title" content="Lucas Li - Maker & PingYin Creator" />
+    <meta property="og:description" content="Rubik's Cube, soccer, piano, coding, videos, and PingYin by Lucas Li." />
     <meta property="og:url" content="https://lucasli.net/" />
     <meta property="og:image" content="https://lucasli.net/og-cover.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lucas Li - 8-Year-Old Maker" />
-    <meta name="twitter:description" content="Rubik's Cube, soccer, piano, coding, and mini games by Lucas Li." />
+    <meta name="twitter:title" content="Lucas Li - Maker & PingYin Creator" />
+    <meta name="twitter:description" content="Rubik's Cube, soccer, piano, coding, videos, and PingYin by Lucas Li." />
     <meta name="twitter:image" content="https://lucasli.net/og-cover.svg" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%91%A6%3C/text%3E%3C/svg%3E" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
@@ -36,8 +36,8 @@
         "@type": "Person",
         "name": "Lucas Li",
         "url": "https://lucasli.net/",
-        "description": "Lucas Li's personal website about Rubik's Cube, soccer, piano, and coding.",
-        "knowsAbout": ["Rubik's Cube", "Soccer", "Piano", "Coding", "Fencing"]
+        "description": "Lucas Li's personal website about Rubik's Cube, soccer, piano, coding, and PingYin.",
+        "knowsAbout": ["Rubik's Cube", "Soccer", "Piano", "Coding", "Fencing", "PingYin", "Chinese Pinyin"]
       }
     </script>
   </head>
@@ -57,9 +57,10 @@
         </button>
         <ul id="primary-navigation" class="nav-links">
           <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">PingYin</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#videos">Videos</a></li>
-          <li><a href="#games">My Games</a></li>
+          <li><a href="#games">Arcade</a></li>
           <li><a href="#gallery">Moments</a></li>
         </ul>
       </nav>
@@ -68,19 +69,70 @@
     <main class="container">
       <section id="about" class="hero reveal">
         <div class="hero-content">
-          <span class="tag">Hello World! 👋</span>
+          <span class="tag">Hello World! Maker mode on 👋</span>
           <h1>I'm Lucas Li</h1>
           <p class="intro">
             I'm 8 years old! I love exploring this amazing world.<br>
             Whether it's solving a <strong>Rubik's Cube</strong>, playing <strong>soccer</strong> on the field,
             or playing melodies on the <strong>piano</strong>, I enjoy every moment.
-            Recently, I've also been learning to create cool <strong>mini-games</strong> using AI!
+            Recently, I've also been building <strong>PingYin</strong>, a Chinese pinyin adventure game for kids.
           </p>
-          <a href="#games" class="btn-primary">Play My Games 🎮</a>
+          <div class="hero-actions">
+            <a href="https://pingyin.lucasli.net/" class="btn-primary" target="_blank" rel="noopener noreferrer">Play PingYin 🦊</a>
+            <a href="#projects" class="btn-secondary">See My Projects</a>
+          </div>
         </div>
         <div class="hero-image">
-           <div class="avatar-placeholder">👦🏻</div>
+          <div class="avatar-card">
+            <div class="avatar-ring" aria-hidden="true">
+              <div class="avatar-placeholder">👦🏻</div>
+              <span class="orbit-badge orbit-badge--cube">🧩</span>
+              <span class="orbit-badge orbit-badge--ball">⚽</span>
+              <span class="orbit-badge orbit-badge--music">🎹</span>
+              <span class="orbit-badge orbit-badge--code">AI</span>
+            </div>
+            <p class="avatar-caption">Cube solver. Soccer runner. AI maker.</p>
+          </div>
         </div>
+      </section>
+
+      <section id="projects" class="section-projects reveal">
+        <div class="project-heading">
+          <p class="eyebrow">Featured Project</p>
+          <h2>PingYin 拼音冒险</h2>
+          <p>
+            PingYin is Lucas's Chinese pinyin practice game: listen, read, speak, and collect stars through short adventure levels.
+          </p>
+        </div>
+        <a class="project-spotlight" href="https://pingyin.lucasli.net/" target="_blank" rel="noopener noreferrer" aria-label="Play PingYin Chinese pinyin adventure">
+          <div class="project-visual" aria-hidden="true">
+            <div class="pinyin-card">
+              <div class="pinyin-card__fox">🦊</div>
+              <div class="pinyin-card__word">
+                <span class="pinyin-card__pinyin">pīn yīn</span>
+                <span class="pinyin-card__hanzi">拼音</span>
+              </div>
+              <div class="pinyin-card__actions">
+                <span>👂 Listen</span>
+                <span>🎤 Speak</span>
+                <span>⭐ Win</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-kicker">Live at pingyin.lucasli.net</span>
+            <h3>A tiny adventure for learning Chinese sounds</h3>
+            <p>
+              Built for Lucas, useful for any young learner. Each round keeps the loop simple: hear the word, read the pinyin, say it out loud, and move to the next level.
+            </p>
+            <ul class="project-feature-list" aria-label="PingYin features">
+              <li>Voice and audio practice</li>
+              <li>Kid-friendly levels</li>
+              <li>Local star progress</li>
+            </ul>
+            <span class="project-cta">Play the adventure →</span>
+          </div>
+        </a>
       </section>
 
       <section id="hobbies" class="section-hobbies">
@@ -194,9 +246,18 @@
 
       <section id="games" class="section-games reveal">
         <h2 class="section-title">My Game Arcade 🕹️</h2>
-        <p class="section-subtitle">These are the mini-games I made with AI. Give them a try! (Under development...)</p>
+        <p class="section-subtitle">PingYin is live now. More AI-made mini-games are coming next.</p>
         
         <div class="game-grid">
+          <a href="https://pingyin.lucasli.net/" class="game-card game-pingyin is-live" target="_blank" rel="noopener noreferrer">
+            <div class="game-icon">🦊</div>
+            <div class="game-info">
+              <h3>PingYin</h3>
+              <p>Chinese pinyin adventure</p>
+              <span class="status-badge live">Live</span>
+            </div>
+          </a>
+
           <a href="#" class="game-card game-1 coming-soon" aria-disabled="true">
             <div class="game-icon">🚀</div>
             <div class="game-info">

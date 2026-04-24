@@ -10,7 +10,9 @@
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="1020" cy="130" r="120" fill="#fdcb6e" opacity="0.6" />
   <circle cx="170" cy="510" r="90" fill="#0984e3" opacity="0.4" />
-  <text x="110" y="270" fill="#2d3436" font-family="Nunito, sans-serif" font-size="72" font-weight="900">Lucas Li</text>
-  <text x="110" y="350" fill="#636e72" font-family="Nunito, sans-serif" font-size="40" font-weight="700">8-Year-Old Maker</text>
-  <text x="110" y="430" fill="#0984e3" font-family="Nunito, sans-serif" font-size="30">Rubik's Cube, Soccer, Piano, Coding</text>
+  <circle cx="940" cy="430" r="140" fill="#6c5ce7" opacity="0.18" />
+  <text x="110" y="250" fill="#2d3436" font-family="Nunito, sans-serif" font-size="72" font-weight="900">Lucas Li</text>
+  <text x="110" y="330" fill="#636e72" font-family="Nunito, sans-serif" font-size="40" font-weight="700">Maker &amp; PingYin Creator</text>
+  <text x="110" y="410" fill="#0984e3" font-family="Nunito, sans-serif" font-size="30">Rubik's Cube, Soccer, Piano, AI Projects</text>
+  <text x="110" y="470" fill="#6c5ce7" font-family="Nunito, sans-serif" font-size="34" font-weight="900">Play PingYin: pingyin.lucasli.net</text>
 </svg>
