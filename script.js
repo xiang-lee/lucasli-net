@@ -72,3 +72,40 @@ if (logo) {
     }, 500);
   });
 }
+
+
+// Header scroll shadow and blur
+const header = document.querySelector(".site-header");
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      header.classList.add("is-scrolled");
+    } else {
+      header.classList.remove("is-scrolled");
+    }
+  }, { passive: true });
+}
+
+
+// Avatar click emoji cycler
+const avatar = document.querySelector(".avatar-placeholder");
+if (avatar) {
+  const emojis = ["👦🏻", "🚀", "🧩", "⚽️", "🤖", "🦊", "🎹"];
+  let currentIndex = 0;
+  avatar.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % emojis.length;
+    avatar.style.transform = "scale(0.8)";
+    setTimeout(() => {
+      avatar.textContent = emojis[currentIndex];
+      avatar.style.transform = "scale(1.1)";
+      setTimeout(() => {
+        avatar.style.transform = "scale(1)";
+      }, 150);
+    }, 150);
+  });
+  
+  // Add some transition CSS via JS for quick inject
+  avatar.style.transition = "transform 0.15s cubic-bezier(0.4, 0, 0.2, 1)";
+  avatar.style.cursor = "pointer";
+  avatar.style.userSelect = "none";
+}

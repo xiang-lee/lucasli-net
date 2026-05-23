@@ -86,7 +86,8 @@ body {
 }
 
 /* Navigation */
-.site-header {
+/* Replaced by python script */
+.site-header-old {
   padding: 14px 0;
   position: sticky;
   top: 0;
@@ -898,4 +899,33 @@ section {
     opacity: 1;
     transform: none;
   }
+}
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  background: rgba(253, 251, 247, 0.85); /* var(--bg) with opacity */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px) rotate(-1deg); }
+  75% { transform: translateX(4px) rotate(1deg); }
+}
+
+.game-card.coming-soon:hover {
+  animation: shake 0.4s ease-in-out;
+  cursor: not-allowed;
+  opacity: 0.9;
 }
